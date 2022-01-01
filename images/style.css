@@ -1,0 +1,60 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ body{
+     background-color: aqua;
+ }
+ .container{
+     position: absolute;
+     width: 85vmin;
+     top: 50%;
+     left: 50%;
+     border: 10px solid white;
+     transform: translate(-50%, -50%);
+     border-radius: 8px;
+     box-shadow: 10px 25px 28px black;
+     overflow: hidden;
+     background-color: blanchedalmond;
+     
+ }
+ .img-container{
+     width: 100%;
+     display: flex;
+     animation: chiboy 16s infinite;
+     animation-timing-function: ease-in-out;
+     background-color: black;
+
+    
+ }
+ img{
+     width: 100%;
+ }
+ @keyframes chiboy{
+     0%{
+         transform: translateX(0%);
+     }
+     
+     25%{
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+     50%{
+         transform: translateX(-100%);
+     }
+     60%{
+        transform: translateX(-200%);
+    }
+     75%{
+         transform: translateX(-200%)
+     }
+     85%{
+        transform: translateX(-300%)
+    }
+     100%{
+         transform: translateX(-300%);
+     }
+ }

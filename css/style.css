@@ -1,0 +1,182 @@
+/* desktop view */
+h1{
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+    
+}
+p{
+    position: absolute;
+    top: 80%;
+    color: hsl(0, 36%, 70%);
+}
+@media(min-width: 701px){
+    .img-div{
+        display: none;
+    }
+    p1{
+        display: none;
+    }
+    input{
+        position: absolute;
+        top: 620px;
+        border: solid hsl(0, 36%, 70%) 0.2px;
+        width: 430px;
+        height: 40px;
+        border-radius: 20px;
+        left:80px;
+        
+    }
+    .col-md-5{
+    overflow: hidden;
+    }
+    .img-slider{
+        display: flex;
+        animation: sliding;
+        animation-iteration-count: infinite;
+        animation-duration: 25s;
+        width: 100%;
+    }
+      
+        
+        @keyframes sliding {
+        0%{transform: translateX(-0%);
+
+        }
+        20%{
+            transform: translateX(0%);
+        }
+        30%{
+            transform: translateX(-100%)
+        }
+        40%{
+            transform: translateX(-100%);
+        }
+        50%{
+            transform: translateX(-200%);
+        }
+        60%{
+            transform: translateX(-200%);
+        }
+        70%{
+            transform: translateX(-300%);
+        }
+        80%{
+            transform: translateX(-300%)
+        }
+        90%{
+            transform: translateX(-400%);
+        }
+        100%{
+            transform: translateX(-400%)
+        }
+    }
+} 
+/* mobile view */
+@media(max-width:700px){
+     h1{
+         position: relative;
+         top: 40px;
+         margin: auto;
+         font-size: 40px;
+         left: 30%;
+     }
+    .img-div{
+        width: 100%;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+    .img-slider2{
+        display: flex;
+        animation: chiboy;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes chiboy{
+        0%{
+            transform: translateX(-0%)
+
+        }
+        20%{
+            transform: translateX(-0%)
+        }
+        30%{
+            transform: translateX(-100%)
+        }
+        40%{
+            transform: translateX(-100%)
+        }
+        50%{
+            transform: translateX(-200%);
+        }
+        60%{
+            transform: translateX(-200%)
+        }
+        70%{
+            transform: translateX(-300%)
+        }
+        80%{
+            transform: translateX(-300%);
+        }
+        90%{
+            transform:translateX(-400%)
+        }
+        100%{
+            transform: translateX(-400%);
+        }
+    }
+    p{
+        display: none;
+    }
+    .coming{
+
+        position: relative;
+        right: 30px;
+    }
+    p1{
+        color:  hsl(0, 36%, 70%);
+        position: relative;
+        top: 50px;
+    }
+    .launch{
+        position: relative;
+        left: 100px;
+    }
+    input{
+        position: absolute;
+        top: 800px;
+        border: solid hsl(0, 36%, 70%) 0.2px;
+        width: 430px;
+        height: 40px;
+        border-radius: 20px;
+        left:10px;
+        
+    }
+    .col-md-5{
+        display: none;
+    }
+    .blink{
+        animation: blinker;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        
+        
+    }
+    @keyframes blinker{
+        0%{
+            color: hsl(0, 36%, 70%) 0.2px;
+        }
+        50%{
+            
+            color: green;
+        }
+        100%{
+            position: relative;
+            bottom: 48px;
+            
+        
+        }
+
+    }
+}
